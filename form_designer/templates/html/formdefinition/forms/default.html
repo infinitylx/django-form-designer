@@ -25,5 +25,5 @@
     {% endif %}
     {% endfor %}
 
-<input type="submit" value="{% if form_definition.submit_label %}{{ form_definition.submit_label }}{% else %}{% trans "Submit" %}{% endif %}" />
+    <input type="submit" value="{% if form_definition.submit_label %}{{ form_definition.submit_label }}{% else %}{% trans "Submit" %}{% endif %}" />{% csrf_token %}
 </form>
